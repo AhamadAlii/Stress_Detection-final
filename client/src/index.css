@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body.dark {
+  @apply bg-gray-800 text-white;
+  --text-color: white;
+}
+
+body.light {
+  @apply bg-gray-100 text-gray-800;
+  --text-color: black;
+}
+
+.theme-toggle {
+  transition: background-color 0.3s ease;
+}
+
+/* Example animation for TestCaseBtn */
+.test-case-btn {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.test-case-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
